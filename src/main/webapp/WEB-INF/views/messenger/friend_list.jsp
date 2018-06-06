@@ -14,9 +14,9 @@
       var friend_name = document.getElementById("friendname").value;
 
       if (friend_name != "") {
-         location.href = "/friend_list/" + friend_name;
+         location.href = "/messenger/search/" + friend_name;
       } else {
-         location.href = "/friend_list";
+         location.href = "/messenger/search/";
       }
    }
    

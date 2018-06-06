@@ -32,6 +32,10 @@ public class Member {
 	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
 	@JoinColumn(name="uid")
 	private List<MemberRole> roles;
+	
+	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
+	@JoinColumn(name="memberEmail")
+	private List<Friends> friendEmail;
 
 
 	
