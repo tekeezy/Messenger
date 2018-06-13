@@ -130,7 +130,7 @@
  
             if (strongRegex.test(pwd.value)) {
  
-      document.getElementById('pwspan').innerHTML = '<b><span style="color:green">보안성 짱이네요</span><br/>';
+      document.getElementById('pwspan').innerHTML = '<b><span style="color:green">보안성 좋음</span><br/>';
  
     } else if (mediumRegex.test(pwd.value)) {
  
@@ -233,8 +233,8 @@
         img.id = "prev_" + previewId;
         img.classList.add("obj");
         img.file = file;
-        img.style.width = '50px'; //기본설정된 div의 안에 뿌려지는 효과를 주기 위해서 div크기와 같은 크기를 지정해준다.
-        img.style.height = '50px';
+        img.style.width = '100px'; //기본설정된 div의 안에 뿌려지는 효과를 주기 위해서 div크기와 같은 크기를 지정해준다.
+        img.style.height = '100px';
  
         preview.appendChild(img);
         if (window.FileReader) { // FireFox, Chrome, Opera 확인.
@@ -271,9 +271,9 @@
               프로필<br/>
               <div class="col-lg-2">
               <div id='previewId' style='width:50px; height:50px; left:0px; top:200px;'></div>
-              <div id="imgg" style=" position:absolute; height:100; width:60; background-repeat:no-repeat; 
-              z-index:2; background-image:url(/resources/profile/noImage.jpg); left:0px; top:10px; display: block">
-              <!-- <input type=file id="" name=file onchange="previewImage(this,'previewId')" style="width:0; height:50; filter:alpha(opacity=0); "> -->
+              <div id="imgg" style=" position:absolute; height:100; width:100; background-repeat:no-repeat; 
+              z-index:2;background-size:100% 100%; background-image:url(/image/profile/profile.jpg); left:0px; top:10px; display: block">
+              <input type=file id="profile" name=profile onchange="previewImage(this,'previewId')" style="width:180; height:50; filter:alpha(opacity=0); ">
               </div>
           </div>
           <input type="hidden" name="_csrf" value="${_csrf.token}">

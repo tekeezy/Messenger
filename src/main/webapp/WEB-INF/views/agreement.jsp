@@ -133,7 +133,7 @@
  <div class="login-page">
    <div class="container">
     <form class="form-login" name="login_form" action="/friend_list" method="POST">
-      <h2 class="form-login-heading">깎톡</h2>
+      <h2 class="form-login-heading">메신저</h2>
           <div class="login-wrap">
       <div class="agree-wrap">
         <textarea rows="5" cols="37.5">이용약관</textarea><br>

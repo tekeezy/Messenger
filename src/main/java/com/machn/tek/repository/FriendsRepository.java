@@ -1,8 +1,8 @@
 package com.machn.tek.repository;
 
-import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.repository.CrudRepository;
 
 import com.machn.tek.domain.Friends;
 
-public interface FriendsRepository extends JpaRepository<Friends, Long>{
+public interface FriendsRepository extends CrudRepository<Friends, Long>{
 }

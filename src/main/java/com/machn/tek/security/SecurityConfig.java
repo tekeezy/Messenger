@@ -30,7 +30,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	public void configure(WebSecurity web) throws Exception
 	{
-		web.ignoring().antMatchers("/css/**", "/script/**", "image/**", "/fonts/**", "lib/**");
+		web.ignoring().antMatchers("/css/**", "/script/**", "/image/**", "/fonts/**", "lib/**");
 	}
 	@Override
 	protected void configure(HttpSecurity http) throws Exception
@@ -55,7 +55,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
-		System.out.println("****test111");
 		  auth.userDetailsService(customUserDetailsService).passwordEncoder(passwordEncoder());
 	}
 }

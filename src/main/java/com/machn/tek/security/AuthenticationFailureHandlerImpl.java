@@ -11,13 +11,11 @@ import org.springframework.security.web.authentication.SimpleUrlAuthenticationFa
  
 public class AuthenticationFailureHandlerImpl extends SimpleUrlAuthenticationFailureHandler {
 	public AuthenticationFailureHandlerImpl() {
-		this.setDefaultFailureUrl("/fuck");
+		this.setDefaultFailureUrl("/");
 	}
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response,
             AuthenticationException exception) throws IOException, ServletException {
-    		
-    		System.out.println("*****%%%failurefff");
     			super.onAuthenticationFailure(request, response, exception);
     }
 }

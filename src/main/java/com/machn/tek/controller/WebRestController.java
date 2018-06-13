@@ -15,7 +15,6 @@ public class WebRestController {
     @PostMapping("/registration")
     @ResponseBody
     public Member Registration(@ModelAttribute Member member){
-    		System.out.println("**********");
         return member;
     }
 }

@@ -1,4 +1,6 @@
-package com.machn.tek.domain;
+package com.machn.tek.domain.chat;
+
+import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -7,18 +9,20 @@ import javax.persistence.Id;
 
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 @Entity
 @Getter
 @Setter
-@ToString
-public class Friends {
+public class Message {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
-	private String friend_email;
+	Long no;
+	private String name;
+	private String email;
+	private String content;
+	private Date date;
 	
 	
+	Long chatNo;
 }

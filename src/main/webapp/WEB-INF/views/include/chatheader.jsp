@@ -3,7 +3,7 @@
 <!-- header begin -->
 <html>
 
-	<title> kkaktalk </title>
+	<title> 메신저 </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
@@ -109,13 +109,13 @@ html,body{height:100%;}
 }
 
 .chat-box .odd {
-    background-color: #ffffff;
+    background-color: #BEC6E5;
     max-width: 90%;
     float: left;
 }
 
 .chat-box .odd2 {
-    background-color: #ffffff;
+    background-color: #BEC6E5;
     max-width: 90%;
     float: left;
 }
@@ -126,7 +126,7 @@ html,body{height:100%;}
     top: auto;
     bottom: auto;
     border: 12px solid;
-    border-color: #ffffff transparent transparent transparent;
+    border-color: #BEC6E5 transparent transparent transparent;
     margin: 0 0 0 -24px;
     float: left;
 }

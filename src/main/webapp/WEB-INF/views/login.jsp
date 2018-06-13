@@ -138,34 +138,18 @@
 	function goJoin(){
 		document.join_form.submit();
 	}
-	
-	$(document).ready(function(){
-	      setTimeout("timer()",1000)
-	      
-	   });
-	   
-	   function timer(){
-	   
-	      $("#main_img").fadeOut('slow',function(){
-	         
-	      })
-	   }
 
 
 </script>
 
 <div>
 
-<img id="main_img" style="position: absolute; 
-      width: 380px;
-      height:550px;
-     z-index: 2;" src="/resources/profile/kkt_img.png">
 
 <div class="login-page" style="position: relative; z-index: 1;" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
 	  	<div class="container">
 		      <form class="form-login" name="login_form" action="/login" method="POST">
 		      
-		        <h2 class="form-login-heading"><img src="/resources/profile/kkt_stamp2.png" style="width:40px; height:40px;"></h2>
+		        <h2 class="form-login-heading">Messenger</h2>
 		        <div class="login-wrap">
 		        		<input type="hidden" name="_csrf" value="${_csrf.token}">
 		            <input type="text" class="form-control" id="login_email" name="username" placeholder="Email" autofocus>
@@ -173,8 +157,8 @@
 		            <input type="password" class="form-control" id="login_pw" name="password"  onkeypress="if(event.keyCode==13) {goLogin();}" placeholder="Password">
 		            <label class="checkbox">
 		                <span class="pull-right">
-		                	<a data-toggle="modal" href="/idSearch">&nbsp&nbsp&nbsp이메일을 잊으셨습니까?</a><br/>
-		                    <a data-toggle="modal" href="/pwSearch">비밀번호를 잊으셨습니까?</a>
+		                	<a data-toggle="modal" href="/idSearch">&nbsp&nbsp&nbsp이메일을 잊으셨습니까?(구현 예정)</a><br/>
+		                    <a data-toggle="modal" href="/pwSearch">비밀번호를 잊으셨습니까?(구현 예정)</a>
 		                </span>
 		            </label>
 		            <br/>

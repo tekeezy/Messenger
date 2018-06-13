@@ -2,6 +2,8 @@ package com.machn.tek.security;
 
 import java.util.Optional;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -17,6 +19,7 @@ public class CustomUserDetailsService implements UserDetailsService {
 	MemberRepository memberRepository;
 	
 	@Override
+	@Transactional
 	public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
 		return
 				Optional.ofNullable(memberRepository.findByEmail(email))
