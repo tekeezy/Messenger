@@ -8,7 +8,7 @@
 		<div class="navbar-header">
 			<tr>
                <td><img class="img-circle" width="40" height="40"
-                  src="/image/profile/${member.profile}" /></td>
+                  src="/resources/upload/profile/${member.profile}" /></td>
             </tr>
             <tr>
                <td>&nbsp&nbsp${member.name}</td>

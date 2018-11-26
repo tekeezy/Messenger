@@ -271,13 +271,13 @@
               프로필<br/>
               <div class="col-lg-2">
               <div id='previewId' style='width:50px; height:50px; left:0px; top:200px;'></div>
-              <div id="imgg" style=" position:absolute; height:100; width:100; background-repeat:no-repeat; 
+              <div id="imgg" style=" position:absolute; height:150; width:100; background-repeat:no-repeat; 
               z-index:2;background-size:100% 100%; background-image:url(/image/profile/profile.jpg); left:0px; top:10px; display: block">
               <input type=file id="profile" name=profile onchange="previewImage(this,'previewId')" style="width:180; height:50; filter:alpha(opacity=0); ">
               </div>
           </div>
           <input type="hidden" name="_csrf" value="${_csrf.token}">
-                <br/><br/><br/><br/>이메일<input type="text" class="form-control" id="email" name="email" placeholder="Email" autofocus>
+                <br/><br/><br/><br/><br/><br/>이메일<input type="text" class="form-control" id="email" name="email" placeholder="Email" autofocus>
                 비밀번호<input type="password" class="form-control" id="password" name="password" placeholder="Password" onkeyup="passwordSecurity();"/><span id="pwspan"></span>
              비밀번호 확인<input type="password" class="form-control" id="pwcheck" name="pwcheck" placeholder="Password" onkeyup="passwordCheck()" /><span id="pwcheckspan"></span>
                 <!-- <input type="password" class="form-control" id="pw_check" name="pw_check" onkeypress="if(event.keyCode==13) {goLogin();}" placeholder="비밀번호확인">

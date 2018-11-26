@@ -32,7 +32,7 @@
 				<c:if test="${!empty friend}">
 					<p class="list-group-item">
 					<img class="img-circle" width="50" height="50"
-							src="${pageContext.request.contextPath}/resources/upload/${friend.profile}" />&nbsp&nbsp&nbsp${friend.name}
+							src="${pageContext.request.contextPath}/resources/upload/profile/${friend.profile}" />&nbsp&nbsp&nbsp${friend.name}
 							<span class="pull-right text-muted small">
 								<a class="fa fa-plus-circle" href="#" onclick="javascript:document.myForm.submit();" style="font-size:20px; margin-top: 12px"></a>
 							</span>

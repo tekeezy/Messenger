@@ -92,7 +92,8 @@
    <div class="panel panel-default">
       <div class="panel-heading" style="text-align: center;">
          친구
-         <a href="/messenger/search"><img style="width:20px; height: 20px; float:right; margin-top: 3px" src="${pageContext.request.contextPath}/resources/upload/button/friend+.png" /></a>
+         <a href="/messenger/search"><img style="width:20px; height: 20px; float:right; margin-top: 3px" 
+         	src="${pageContext.request.contextPath}/resources/upload/button/friend+.png" /></a>
       </div>
       
       <div class="panel panel-body">
@@ -102,7 +103,8 @@
             <span class="input-group-btn"></span>
             <c:forEach items="${friends}" var="vo">
                <p class="list-group-item">
-                  <img class="img-circle" width="50" height="50" src="${pageContext.request.contextPath}/resources/upload/profile/${vo.profile}" />&nbsp&nbsp
+                  <img class="img-circle" width="50" height="50" 
+                  		src="${pageContext.request.contextPath}/resources/upload/profile/${vo.profile}" />&nbsp&nbsp
                   <a href="#" onclick="go('${vo.email}');">${vo.name}</a>
                   <%-- <a style="float: right" href="#" onclick="ondelete('${vo.email}');"><img style="width:23px; height: 23px; margin-top: 10px" src="/image/profile/friend-.png" /></a> --%>
                </p>

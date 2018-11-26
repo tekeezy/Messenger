@@ -10,7 +10,7 @@
 <%@include file="../include/chatApp.jsp" %>
 
 <div class="panel panel-default">
-	<div class="panel panel-heading" style="text-align: center; position:fixed; top:0; left:0; z-index:10; width:100%; padding : 3px" >${friend_name}
+	<div class="panel panel-heading" style="text-align: center; position:fixed; top:0; left:0; z-index:10; width:100%; padding : 3px" >${friend.name}
 		<a href="/messenger"><i class="fa fa-chevron-left fa-5x" style="float: left; font-size:15px; margin-top: 10px;" >&nbsp뒤로가기</i></a>
 			<ul class="nav navbar-top-links navbar-right" style="float:right;">
 			<li class="dropdown">
