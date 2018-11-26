@@ -61,8 +61,8 @@ public class WebController {
 		member.setPassword(passwordEncoder.encode(member.getPassword()));
 		
 		String root_path = request.getSession().getServletContext().getRealPath("/");
-		String attach_path = "resources/upload/profile/";
-		String fileUrl = root_path + attach_path;
+		String attach_path = "/resources/upload/profile/";
+		String fileUrl =  root_path + attach_path;
 		String sourceFileName = profile.getOriginalFilename(); 
 		if(!sourceFileName.isEmpty() && sourceFileName != "") {
 			String sourceFileNameExtension = FilenameUtils.getExtension(sourceFileName).toLowerCase(); 

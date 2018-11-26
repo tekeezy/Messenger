@@ -36,7 +36,6 @@ public class MessengerController {
     		
     		model.addAttribute("friends", friends);
     		return "messenger/friend_list";
-    		//return "messenger/test";
     }
     
 
